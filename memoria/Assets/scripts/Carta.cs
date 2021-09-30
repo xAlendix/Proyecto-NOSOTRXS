@@ -12,6 +12,7 @@ public class Carta : MonoBehaviour
     AudioSource audioSource;
     public bool Mostrando;
     
+
     public float tiempoDelay;
 
     public GameObject interfazVictoria;
@@ -29,7 +30,7 @@ public class Carta : MonoBehaviour
     void OnMouseDown()
     {
         print(NumCarta.ToString());
-        MostrarCarta();
+        StartCoroutine(MostrarCarta());
     }
 
     public void PonerColor(Texture2D _textura)
@@ -37,8 +38,13 @@ public class Carta : MonoBehaviour
         texturaAnverso = _textura;
         
     }
-    public void MostrarCarta()
+    public IEnumerator MostrarCarta()
     {
+        for (int i = 0; i < 90; i+=2)
+        {
+            transform.eulerAngles = new Vector3(0, 0, i);
+            yield return new WaitForSeconds(0.15f / 180f);
+        }
         if (!Mostrando && crearCartas.GetComponent<CrearCartas>().sePuedeMostrar)
         {
             Mostrando = true;
@@ -46,19 +52,35 @@ public class Carta : MonoBehaviour
             //Invoke("EsconderCarta", tiempoDelay);
             crearCartas.GetComponent<CrearCartas>().HacerClick(this);
         }
+        for (int i = 0; i < 90; i+=2)
+        {
+            transform.eulerAngles = new Vector3(0, 0, 90+i);
+            yield return new WaitForSeconds(0.15f / 180f);
+        }
     }
 
     public void EsconderCarta()
     {
-        Invoke("Esconder", tiempoDelay);
+        StartCoroutine(Esconder());
         crearCartas.GetComponent<CrearCartas>().sePuedeMostrar = false;
     }
 
-    void Esconder()
+    IEnumerator Esconder()
     {
+        yield return new WaitForSeconds(tiempoDelay);
+        for (int i = 180; i > 90; i -= 2)
+        {
+            transform.eulerAngles = new Vector3(0, 0, i);
+            yield return new WaitForSeconds(0.15f / 180f);
+        }
         GetComponent<MeshRenderer>().material.mainTexture = texturaReverso;
         Mostrando = false;
         crearCartas.GetComponent<CrearCartas>().sePuedeMostrar = true;
+        for (int i = 90; i > 0; i -= 2)
+        {
+            transform.eulerAngles = new Vector3(0, 0, i);
+            yield return new WaitForSeconds(0.15f / 180f);
+        }
     }
 
 }

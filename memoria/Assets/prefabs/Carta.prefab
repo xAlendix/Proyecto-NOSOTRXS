@@ -113,3 +113,6 @@ MonoBehaviour:
   crearCartas: {fileID: 0}
   Mostrando: 0
   tiempoDelay: 1
+  interfazVictoria: {fileID: 0}
+  sonidovolteo: {fileID: 6737175411778638058, guid: d89a5d0f6f52c9d44924755b65808c09,
+    type: 3}

@@ -14,6 +14,7 @@ public class CrearCartas : MonoBehaviour
     AudioSource audioSource;
     public AudioClip giraCartaSound;
     public AudioClip puntoSound;
+    public AudioClip girarCartaSound;
 
     public Material[] materiales;
     public Texture2D[] texturas;
@@ -26,8 +27,6 @@ public class CrearCartas : MonoBehaviour
     public float contador = 0.0f;
 
     public GameObject interfazVictoria;
-
-
 
     void Awake()
     {
@@ -125,6 +124,7 @@ public class CrearCartas : MonoBehaviour
             {
                 _carta.EsconderCarta();
                 CartaMostrada.EsconderCarta();
+                audioSource.PlayOneShot(girarCartaSound);
             }
             CartaMostrada = null;
         }
