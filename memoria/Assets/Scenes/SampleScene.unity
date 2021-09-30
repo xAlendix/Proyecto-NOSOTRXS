@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -292,7 +292,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -303,8 +303,8 @@ AudioSource:
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
+  BypassListenerEffects: 1
+  BypassReverbZones: 1
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -407,6 +407,12 @@ PrefabInstance:
       propertyPath: interfazVictoria
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1668103108515005477, guid: 772a3116d4aba714b8d4143a09090571,
+        type: 3}
+      propertyPath: sonidovolteo
+      value: 
+      objectReference: {fileID: 6737175411778638058, guid: d89a5d0f6f52c9d44924755b65808c09,
+        type: 3}
     - target: {fileID: 3262768266932373306, guid: 772a3116d4aba714b8d4143a09090571,
         type: 3}
       propertyPath: m_RootOrder
@@ -684,9 +690,9 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0
+    x: 0.3
     y: 0
-    width: 1
+    width: 0.3
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
