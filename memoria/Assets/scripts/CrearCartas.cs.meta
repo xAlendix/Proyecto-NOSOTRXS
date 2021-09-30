@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 0cf526e69f2b90348b94b9974f316764
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - CartaPrefab: {instanceID: 0}
+  - CartasParent: {instanceID: 0}
+  - giraCartaSound: {instanceID: 0}
+  - puntoSound: {fileID: 8300000, guid: ee6fa2247833b06438cddc0efb3c9793, type: 3}
+  - CartaMostrada: {instanceID: 0}
+  - textoContadorIntentos: {instanceID: 0}
+  - interfazVictoria: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
