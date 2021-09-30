@@ -27,8 +27,6 @@ public class CrearCartas : MonoBehaviour
 
     public GameObject interfazVictoria;
 
-
-
     void Awake()
     {
         audioSource = GetComponent<AudioSource>();

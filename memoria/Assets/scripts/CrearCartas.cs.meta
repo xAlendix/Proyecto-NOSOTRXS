@@ -6,11 +6,13 @@ MonoImporter:
   defaultReferences:
   - CartaPrefab: {instanceID: 0}
   - CartasParent: {instanceID: 0}
-  - giraCartaSound: {instanceID: 0}
+  - giraCartaSound: {fileID: 8300000, guid: 4f0b66257763817489c1e57db654943b, type: 3}
   - puntoSound: {fileID: 8300000, guid: ee6fa2247833b06438cddc0efb3c9793, type: 3}
   - CartaMostrada: {instanceID: 0}
   - textoContadorIntentos: {instanceID: 0}
   - interfazVictoria: {instanceID: 0}
+  - sonidocarta: {fileID: 6737175411778638058, guid: d89a5d0f6f52c9d44924755b65808c09,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

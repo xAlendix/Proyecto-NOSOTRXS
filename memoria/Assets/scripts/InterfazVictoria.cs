@@ -10,6 +10,7 @@ public class InterfazVictoria : MonoBehaviour
     public GameObject menuEstrella3;
     public GameObject menuEstrella2;
     public GameObject menuEstrella1;
+    public GameObject niveles;
     public bool menuMostradoGanador;
     AudioSource audioSource;
 
@@ -26,6 +27,7 @@ public class InterfazVictoria : MonoBehaviour
         audioSource.PlayOneShot(victoriaSound);
         menuGanador.SetActive(true);
         menuMarco.SetActive(true);
+        niveles.SetActive(true);
         if(crearcartas.GetComponent<CrearCartas>().contadorClicks <= 15)
         {
             menuEstrella3.SetActive(true);
@@ -52,6 +54,7 @@ public class InterfazVictoria : MonoBehaviour
         menuEstrella1.SetActive(false);
         menuEstrella2.SetActive(false);
         menuEstrella3.SetActive(false);
+        niveles.SetActive(false);
         menuMostradoGanador = false;
     }
 }

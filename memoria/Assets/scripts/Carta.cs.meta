@@ -3,7 +3,13 @@ guid: d5b14c574ef812e42bbd8eba10b78256
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - texturaAnverso: {instanceID: 0}
+  - texturaReverso: {instanceID: 0}
+  - crearCartas: {instanceID: 0}
+  - interfazVictoria: {instanceID: 0}
+  - sonidovolteo: {fileID: 6737175411778638058, guid: d89a5d0f6f52c9d44924755b65808c09,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
