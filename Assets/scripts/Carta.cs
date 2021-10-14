@@ -12,7 +12,6 @@ public class Carta : MonoBehaviour
     AudioSource audioSource;
     public bool Mostrando;
     
-
     public float tiempoDelay;
 
     public GameObject interfazVictoria;

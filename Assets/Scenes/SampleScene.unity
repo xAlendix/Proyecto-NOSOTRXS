@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -399,20 +399,9 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 1ffaaf864e3ca2c4d9e9f9836172dc2d, type: 3}
     - target: {fileID: 1668103108515005477, guid: 772a3116d4aba714b8d4143a09090571,
         type: 3}
-      propertyPath: girarCartaSound
-      value: 
-      objectReference: {fileID: 8300000, guid: b1a8b73684c52184ea885e5896b7a1d2, type: 3}
-    - target: {fileID: 1668103108515005477, guid: 772a3116d4aba714b8d4143a09090571,
-        type: 3}
       propertyPath: interfazVictoria
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 1668103108515005477, guid: 772a3116d4aba714b8d4143a09090571,
-        type: 3}
-      propertyPath: sonidovolteo
-      value: 
-      objectReference: {fileID: 6737175411778638058, guid: d89a5d0f6f52c9d44924755b65808c09,
-        type: 3}
     - target: {fileID: 3262768266932373306, guid: 772a3116d4aba714b8d4143a09090571,
         type: 3}
       propertyPath: m_RootOrder
@@ -690,9 +679,9 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.3
+    x: 0
     y: 0
-    width: 0.3
+    width: 1
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
@@ -862,7 +851,6 @@ MonoBehaviour:
   CartasParent: {fileID: 1821980089}
   giraCartaSound: {fileID: 8300000, guid: 69be59d7f59b79e49a6ea35a811353dd, type: 3}
   puntoSound: {fileID: 8300000, guid: ee6fa2247833b06438cddc0efb3c9793, type: 3}
-  girarCartaSound: {fileID: 8300000, guid: b1a8b73684c52184ea885e5896b7a1d2, type: 3}
   materiales: []
   texturas:
   - {fileID: 2800000, guid: 5695d3bb51928c0489b511d1aa996197, type: 3}
